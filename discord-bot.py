@@ -13,11 +13,6 @@ client = discord.Client()
 
 @bot.command(name='wikirun', help='Generate 2 random Wikipedia links')
 async def random_links (ctx):
-    x =0
-    numbers_of_links = 2
-    while x<numbers_of_links:
-        await ctx.channel.send(randomwikigen.randomwikigen())
-        x=x+1
-
-       
+    await ctx.channel.send("Inizio: " +randomwikigen.randomwikigen())
+    await ctx.channel.send("Fine: " +randomwikigen.randomwikigen())
 bot.run(token)
